@@ -13,7 +13,7 @@ AI_score = 0
 
 pick = ()
 while pick != 'exit':
-  print('Choose "r" for rock, "p" for paper, or "s" for scissors')
+  print('Choose "r" for rock, "p" for paper, or "s" for scissors or "exit" to end game')
   pick = input('What is your choice? ')
   if pick.lower() == 'r':
     x = ai_choice()
