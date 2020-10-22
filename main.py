@@ -15,7 +15,7 @@ pick = ()
 while pick != 'exit':
   print('Choose "r" for rock, "p" for paper, or "s" for scissors')
   pick = input('What is your choice? ')
-  if pick == 'r':
+  if pick.lower() == 'r':
     x = ai_choice()
     if x == 'rock':
       print('Tie, you both had rock, play again!')
@@ -25,7 +25,7 @@ while pick != 'exit':
     else:
       print('Rock beats scissors, you win!')
       my_score += 1
-  elif pick == 'p':
+  elif pick.lower() == 'p':
     x = ai_choice()
     if x == 'paper':
       print('Tie, you both had paper, play again!')
@@ -35,7 +35,7 @@ while pick != 'exit':
     else:
       print('Paper beats rock, you win!')
       my_score += 1
-  elif pick == 's':
+  elif pick.lower() == 's':
     x = ai_choice()
     if x == 'scissors':
       print('Tie, you both had scissors, play again!')
@@ -45,7 +45,7 @@ while pick != 'exit':
     else:
       print('Scissors beats paper, you win!')
       my_score += 1
-  elif pick == 'exit':
+  elif pick.lower() == 'exit':
     continue
   else:
     print('Please pick one of the available options.')
